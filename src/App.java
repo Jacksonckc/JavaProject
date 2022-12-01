@@ -23,7 +23,7 @@ public class App {
             System.out.println("Enter your placement (1-9):");
             int playerPosition = scan.nextInt();
             
-            while(playerPositions.contains(playerPosition)||cpuPositions.contains(playerPosition)){
+            while(playerPositions.contains(playerPosition) || cpuPositions.contains(playerPosition)) {
                 System.out.println("Position taken! Try again");
                 playerPosition = scan.nextInt();
             }
@@ -132,7 +132,7 @@ public class App {
             } else if(cpuPositions.containsAll(l)){
                 return "Sorry you lost :(";
             } else if(playerPositions.size() + cpuPositions.size() == 9){
-                return "Tie";
+                return "It's a tie";
             }
         }
 
